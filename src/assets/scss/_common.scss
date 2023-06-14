@@ -1,0 +1,87 @@
+/* checkbox/radio */
+.form-check {
+  display: flex;
+  align-items: center;
+  min-height: 16px;
+  padding-right: 24px;
+  &.block{
+    display: block; text-align: center; padding-right: 0;
+    .form-check-label{
+      display: block; margin-left: 0;
+      p{ font-size: 15px; margin: 5px 0;}
+    }
+  }
+}
+.asd{ 
+  path{stroke: red !important;}
+}
+.form-check-input {
+  width: 14px;
+  height: 8px;
+  margin-top: 1px;
+  vertical-align: top;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  appearance: none;
+  background-image: url('../images/icon-none-check.svg');
+  stroke: blue !important;
+    fill: blue !important;
+
+  &[type="checkbox"] {
+    border: 0;
+    background-color: #fff;
+    border-radius: 0;
+  }
+
+  &[type="radio"] {
+    border-radius: 50%;
+  }
+
+  &:checked {
+    // background-color: $PRIMARY_COLOR;
+    // border-color: $PRIMARY_COLOR;
+    
+    &[type="checkbox"] {
+      background-image: url('../images/icon-active-check.svg');
+     
+    }
+
+    &[type="radio"] {
+        background-color: #fff; border: 7px solid $PRIMARY_COLOR; position: relative;
+      ~ .form-check-label{color: $PRIMARY_COLOR;}
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    filter: none;
+    opacity: .5;
+  }
+
+  &[disabled],
+  &:disabled {
+    ~ .form-check-label {
+      opacity:.5;
+    }
+  }
+}
+
+.inline-form-radio{
+  .form-check{ margin-right: 40px;}
+}
+
+.form-check-label {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 20px;
+  vertical-align: sub;
+  color: #000;
+}
+
+.form-check-inline {
+  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: middle;
+}

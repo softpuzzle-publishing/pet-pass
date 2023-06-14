@@ -1,0 +1,100 @@
+#container-block{
+    padding: 50px 30px 45px; position: relative;
+}
+.icon-notice{
+    display: inline-block; width: 26px; height: 27px; background-image: url('../images/icon-notice.svg');
+}
+.notice-btn{
+    position: absolute; top: 50px; right: 30px;
+}
+.title{
+    font-size: 21px; text-align: center; color: #003595;  font-weight: bold; text-decoration: underline;
+}
+.login-wrap{
+    .logo{ text-align: center; }
+    .login-title{ margin-top: 16px; font-weight: 700; font-size: 28px; color: $PRIMARY_COLOR; text-align: center;}
+
+    .agree-list{
+        margin-top: 45px;
+        li{
+            padding-bottom: 15px;
+        }
+        .full-agreement{
+            .sub-msg{
+                font-size: 12px; line-height: 1.67; letter-spacing: -0.24px; margin-left: 35px; margin-top: 15px; border-bottom: 1px solid $PRIMARY_COLOR; padding-bottom: 20px;
+            }
+        }
+        .chk-more{
+            display: flex; align-items: center; justify-content: space-between;
+            .form-check{ 
+                max-width: 85%;
+                .form-check-input{
+                    flex-shrink: 0;
+                }
+            }
+            a{
+                font-size: 16px; line-height: 1.25; letter-spacing: -0.32px; text-align: left; color: #ccc;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// qr코드 만들기
+.link{
+    margin-top: 47px; display: flex; flex-direction: column; gap: 28px;
+    a{ color: $PRIMARY_COLOR; text-decoration: underline; text-align: center; display: block; font-weight: 700;}
+}
+
+// qr코드 완성
+.exam-txt{
+    font-size: 14px; font-weight: 700; line-height: 22px; margin-top: 30px;
+}
+.qr-img{
+    text-align: center; margin-top: 60px; margin-bottom: 4px;
+}
+@at-root{
+    .btn-group{text-align: center; margin-top: 56px;}
+    .btn{
+        min-width: 250px; font-size: 17px; line-height: 1.29; letter-spacing: 0.43px; padding: 16px 0; margin: 0 auto; background-color: $PRIMARY_COLOR; color: #FFF; border-radius: 10px;
+        &:disabled{
+            background-color: #ccc; color: #000;
+        }
+    }
+    .form-list{
+        margin-top: 75px;
+      .form-group{
+        margin-bottom: 20px;
+        .form-desc{margin-bottom: 10px; }
+        .form-control{
+            width: 100%; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; font-weight: 400; padding: 12px 35px 12px 10px; 
+            &::placeholder{color: #ccc; font-weight: 300;}
+        }
+        .phone-group{
+            display: flex; gap: 20px;
+            .inp-phone{ width: 25%; text-align: center;}
+        }
+        .form-select{
+            width: 100%; border: 1px solid #ccc; border-radius: 5px; padding: 12px 35px 12px 10px; appearance: none;
+            -webkit-appearance: none; -moz-appearance: none; background-image: url('../images/select-arrow.svg'); background-repeat: no-repeat; background-position: 95% 40%;
+            option[value=""][disabled] {
+                display: none; color: #ddd;
+            }
+        }
+      }  
+
+    //   섹션형식으로 폼 나눠졌을 때
+      .form-section{
+        .form-section-title{font-size: 18px; font-weight: 500; text-decoration: underline; margin-bottom: 22px;}
+        .form-group{
+            padding: 0 25px;
+        }
+      }
+    }
+}
+footer{
+    margin-top: 150px;
+    .service-txt{ font-size: 16px; color: #47432e; font-weight: 700;}
+    .inquiry{  font-size: 14px; color: #47432e; margin-top: 10px; font-weight: 300;}
+    .copyright{font-size: 14px; color: #47432e; margin-top: 6px; font-weight: 300;}
+}

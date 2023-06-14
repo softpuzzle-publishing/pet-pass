@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-Compatible" content="IE=edge" />
+    <title>PetPass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 
+<link rel="icon" type="image/png" href="../assets/images/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="../assets/images/favicon-32x32.png" sizes="32x32" /> -->
+    <!-- jquery js -->
+    <script src="../assets/lib/jquery/jquery.min.js"></script>
+
+    <!-- library css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap-grid.css" />
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.css" /> -->
+
+    <!-- publilshing css -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- library js -->
+    <script src="../assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- publishing js -->
+    <script src="../assets/js/ui.js" async></script>
+  </head>
+
+  <body>
+    <div id="container-block">
+      <button type="button" class="notice-btn">
+        <i class="icon-notice"></i>
+      </button>
+      <div class="qr-wrap">
+        <div class="title">출입 QR 코드 발급하기</div>
+
+        <div class="form-list">
+          <div class="form-group">
+            <p class="form-desc">보호자 이름 *</p>
+            <input type="text" class="form-control" placeholder="보호자분 이름을 입력해주세요" />
+          </div>
+          <div class="form-group">
+            <p class="form-desc">보호자 생년월일 *</p>
+            <input type="number" class="form-control" placeholder="YYYYMMDD 숫자만 입력해주세요." />
+          </div>
+          <div class="form-group">
+            <p class="form-desc">국가동물등록번호*</p>
+            <input type="number" class="form-control" placeholder="15자리 국가동물등록번호를 입력해주세요." />
+          </div>
+          <div class="form-group">
+            <p class="form-desc">전화번호 *</p>
+            <div class="phone-group">
+              <input type="number" class="form-control inp-phone" placeholder="010" />
+              <input type="number" class="form-control" placeholder="EX)1234-5678" />
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn" disabled>출입QR코드 생성하기</button>
+        </div>
+
+        <div class="link">
+          <a href="">국가동물등록번호 없이 출입QR 코드 발급 하기</a>
+          <a href="">APMS 국가등록번호 조회하기</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    @@include('@@webRoot/_include/_head.html')
+  </head>
+
+  <body>
+    <div id="container-block">
+      <button type="button" class="notice-btn">
+        <i class="icon-notice"></i>
+      </button>
+      <div class="qr-wrap">
+        <div class="title">출입 QR 코드 발급하기</div>
+
+        <div class="form-list">
+          <div class="form-section">
+            <div class="form-section-title">보호자 정보</div>
+            <div class="form-group">
+              <p class="form-desc">보호자 이름 *</p>
+              <input type="text" class="form-control" placeholder="보호자분 이름을 입력해주세요" />
+            </div>
+            <div class="form-group">
+              <p class="form-desc">전화번호 *</p>
+              <div class="phone-group">
+                <input type="number" class="form-control inp-phone" placeholder="010" />
+                <input type="number" class="form-control" placeholder="EX)1234-5678" />
+              </div>
+            </div>
+          </div>
+          <div class="form-section">
+            <div class="form-section-title">반려동물 정보</div>
+            <div class="form-group">
+              <p class="form-desc">반려동물 이름 *</p>
+              <input type="number" class="form-control" placeholder="반려동물 이름을 입력해 주세요." />
+            </div>
+            <div class="form-group">
+              <p class="form-desc">반려동물 품종 *</p>
+              <select name="" id="" class="form-select" required>
+                <option value="" disabled selected>반려동물 품종을 선택해주세요.</option>
+                <option value="">반려동물 품종을 선택해주세요.</option>
+                <option value="">반려동물 품종을 선택해주세요.</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p class="form-desc">반려동물 성별 *</p>
+              <select name="" id="" class="form-select" required>
+                <option value="" disabled selected>반려동물 성별을 선택해주세요.</option>
+                <option value="">반려동물 품종을 선택해주세요.</option>
+                <option value="">반려동물 품종을 선택해주세요.</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <p class="form-desc">반려동물 중성화 여부 *</p>
+              <select name="" id="" class="form-select" required>
+                <option value="" disabled selected>반려동물 중성화 여부를 선택해주세요.</option>
+                <option value="">반려동물 품종을 선택해주세요.</option>
+                <option value="">반려동물 품종을 선택해주세요.</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn" disabled>출입QR코드 생성하기</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
