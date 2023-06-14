@@ -2,10 +2,10 @@
     padding: 50px 30px 45px; position: relative;
 }
 .icon-notice{
-    display: inline-block; width: 26px; height: 27px; background-image: url('../images/icon-notice.svg');
+    display: inline-block; width: 26px; height: 26px; background-image: url('../images/icon-notice.svg');
 }
 .notice-btn{
-    position: absolute; top: 50px; right: 30px;
+    position: absolute; top: 50px; right: 30px;transform: translateY(-2px);
 }
 .title{
     font-size: 21px; text-align: center; color: #003595;  font-weight: bold; text-decoration: underline;
@@ -26,7 +26,7 @@
         }
         .chk-more{
             display: flex; align-items: center; justify-content: space-between;
-            .form-check{ 
+            .form-check{
                 max-width: 85%;
                 .form-check-input{
                     flex-shrink: 0;
@@ -67,7 +67,7 @@
         margin-bottom: 20px;
         .form-desc{margin-bottom: 10px; }
         .form-control{
-            width: 100%; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; font-weight: 400; padding: 12px 35px 12px 10px; 
+            width: 100%; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; font-weight: 400; padding: 12px 10px 12px 10px;
             &::placeholder{color: #ccc; font-weight: 300;}
         }
         .phone-group{
@@ -81,7 +81,7 @@
                 display: none; color: #ddd;
             }
         }
-      }  
+      }
 
     //   섹션형식으로 폼 나눠졌을 때
       .form-section{

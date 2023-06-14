@@ -324,8 +324,9 @@ body {
 body {
   background: #fff;
   color: #000;
-  font-family: 맑은 고딕, malgun gothic, AppleGothicNeoSD, Apple SD 산돌고딕 Neo, Microsoft NeoGothic, Droid sans, sans-serif;
+  font-family: 맑은 고딕, malgun gothic, -apple-system, Apple SD 산돌고딕 Neo, AppleGothicNeoSD, Microsoft NeoGothic, Droid sans, sans-serif;
   font-size: 16px;
+  -webkit-text-size-adjust: none;
 }
 
 @media screen and (max-width: 992px) {
@@ -697,7 +698,7 @@ progress {
 .icon-notice {
   display: inline-block;
   width: 26px;
-  height: 27px;
+  height: 26px;
   background-image: url("../images/icon-notice.svg");
 }
 
@@ -705,6 +706,7 @@ progress {
   position: absolute;
   top: 50px;
   right: 30px;
+  transform: translateY(-2px);
 }
 
 .title {
@@ -823,7 +825,7 @@ progress {
   border-radius: 5px;
   font-size: 16px;
   font-weight: 400;
-  padding: 12px 35px 12px 10px;
+  padding: 12px 10px 12px 10px;
 }
 .form-list .form-group .form-control::-moz-placeholder {
   color: #ccc;
